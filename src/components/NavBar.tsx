@@ -14,12 +14,25 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
   const { t } = useTranslation();
   const [isAtTop, setIsAtTop] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       setIsAtTop(currentScrollPos < 10);
       setIsScrolled(currentScrollPos > 50);
+
+      // Update active section based on scroll position
+      const sections = ['start', 'vision', 'aliyah', 'mission', 'project', 'support', 'founder', 'contact'];
+      const currentSection = sections.find(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return rect.top <= 100 && rect.bottom >= 100;
+        }
+        return false;
+      });
+      setActiveSection(currentSection || '');
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -40,8 +53,9 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
 
   const menuItems = [
     { id: 'start', label: t('nav.start') },
+    { id: 'vision', label: t('nav.vision') },
     { id: 'project', label: t('nav.project') },
-    { id: 'about', label: t('nav.about') },
+    { id: 'support', label: t('nav.support') },
     { id: 'contact', label: t('nav.contact') },
   ];
 
@@ -49,8 +63,19 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
     setLanguage(language === 'de' ? 'en' : 'de');
   };
 
-  const handleItemClick = () => {
+  const handleItemClick = (sectionId: string) => {
     if (isMenuOpen) setIsMenuOpen(false);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = 80; // Adjust this value based on your navbar height
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
   };
 
   return (
@@ -64,7 +89,7 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div className="flex-shrink-0">
-              <a href="#" className="block">
+              <a href="#" className="block" onClick={(e) => { e.preventDefault(); handleItemClick('start'); }}>
                 <img 
                   src={Logo} 
                   alt="Haus der Einheit" 
@@ -79,10 +104,15 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
                 <a
                   key={item.id}
                   href={`#${item.id}`}
-                  className={`text-sm font-medium tracking-wide hover:text-[#2E8B57] transition-all duration-300
-                    ${isAtTop ? 'text-white' : 'text-gray-800'}`}
+                  onClick={(e) => { e.preventDefault(); handleItemClick(item.id); }}
+                  className={`text-sm font-medium tracking-wide transition-all duration-300 relative
+                    ${isAtTop ? 'text-white' : 'text-gray-800'}
+                    ${activeSection === item.id ? 'text-[#2E8B57]' : 'hover:text-[#2E8B57]'}`}
                 >
                   {item.label}
+                  {activeSection === item.id && (
+                    <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#2E8B57] transform scale-x-100 transition-transform duration-300" />
+                  )}
                 </a>
               ))}
               <button
@@ -141,8 +171,9 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
                 <a
                   key={item.id}
                   href={`#${item.id}`}
-                  className="block px-4 py-3 text-gray-800 hover:text-[#2E8B57] hover:bg-gray-50 rounded-lg transition-all duration-300"
-                  onClick={handleItemClick}
+                  onClick={(e) => { e.preventDefault(); handleItemClick(item.id); }}
+                  className={`block px-4 py-3 text-gray-800 hover:text-[#2E8B57] hover:bg-gray-50 rounded-lg transition-all duration-300
+                    ${activeSection === item.id ? 'text-[#2E8B57] bg-gray-50' : ''}`}
                 >
                   {item.label}
                 </a>

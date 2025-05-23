@@ -8,17 +8,17 @@ const Aliyah = () => {
   const steps = [
     {
       icon: <Clock className="w-8 h-8 text-[#2E8B57]" />,
-      title: 'Waiting Period',
+      title: t('aliyah.steps.waiting.title'),
       description: t('aliyah.description')
     },
     {
       icon: <Home className="w-8 h-8 text-[#2E8B57]" />,
-      title: 'Integration',
-      description: 'Integration in Israel begins after recognition and return, with support and better living conditions.'
+      title: t('aliyah.steps.integration.title'),
+      description: t('aliyah.steps.integration.description')
     },
     {
       icon: <Heart className="w-8 h-8 text-[#2E8B57]" />,
-      title: 'Support Needed',
+      title: t('aliyah.steps.support.title'),
       description: t('aliyah.challenge')
     }
   ];

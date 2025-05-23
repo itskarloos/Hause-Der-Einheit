@@ -8,18 +8,18 @@ const Support = () => {
   const supportOptions = [
     {
       icon: <Heart className="w-8 h-8 text-[#2E8B57]" />,
-      title: 'Donate',
+      title: t('support.options.donate.title'),
       description: t('support.donation')
     },
     {
       icon: <Share2 className="w-8 h-8 text-[#2E8B57]" />,
-      title: 'Share',
+      title: t('support.options.share.title'),
       description: t('support.description')
     },
     {
       icon: <Mail className="w-8 h-8 text-[#2E8B57]" />,
-      title: 'Contact',
-      description: 'Get in touch to learn more about how you can help.'
+      title: t('support.options.contact.title'),
+      description: t('support.options.contact.description')
     }
   ];
 

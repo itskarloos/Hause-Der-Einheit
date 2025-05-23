@@ -51,10 +51,10 @@ const Hero = () => {
     setTimeout(() => setIsAnimating(false), 1000);
   };
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToVision = () => {
+    const visionSection = document.getElementById('vision');
+    if (visionSection) {
+      visionSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -100,7 +100,7 @@ const Hero = () => {
             {t(slides[currentSlide].subtitle)}
           </p>
           <button 
-            onClick={scrollToAbout}
+            onClick={scrollToVision}
             className={`bg-[#2E8B57] hover:bg-[#2E8B57]/90 text-white px-8 sm:px-10 py-4 sm:py-5 
               text-base sm:text-lg rounded-full transition-all duration-300 transform hover:scale-105
               shadow-lg hover:shadow-xl font-medium tracking-wide`}
@@ -156,9 +156,9 @@ const Hero = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
         <button 
-          onClick={scrollToAbout}
+          onClick={scrollToVision}
           className="animate-bounce focus:outline-none"
-          aria-label="Scroll to About section"
+          aria-label="Scroll to Vision section"
         >
           <ChevronDown className="w-7 h-7 sm:w-8 sm:h-8 text-white/80" />
         </button>

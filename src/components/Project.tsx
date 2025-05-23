@@ -10,22 +10,22 @@ const Project = () => {
     {
       icon: <Leaf className="w-8 h-8 text-[#2E8B57]" />,
       title: t('project.features.sustainable'),
-      description: 'Sustainable construction and materials for a better future.'
+      description: t('project.features.sustainable.description')
     },
     {
       icon: <Users className="w-8 h-8 text-[#2E8B57]" />,
       title: t('project.features.workshop'),
-      description: 'A dedicated space for women to learn and create textile crafts.'
+      description: t('project.features.workshop.description')
     },
     {
       icon: <GraduationCap className="w-8 h-8 text-[#2E8B57]" />,
       title: t('project.features.community'),
-      description: 'Spaces designed for education, workshops, and community building.'
+      description: t('project.features.community.description')
     },
     {
       icon: <Heart className="w-8 h-8 text-[#2E8B57]" />,
       title: t('project.features.garden'),
-      description: 'An ecological garden for sustainable nutrition and community gatherings.'
+      description: t('project.features.garden.description')
     }
   ];
 

@@ -11,9 +11,29 @@ export const translations: Translation = {
     de: 'Start',
     en: 'Home'
   },
+  'nav.vision': {
+    de: 'Vision',
+    en: 'Vision'
+  },
+  'nav.aliyah': {
+    de: 'Alija',
+    en: 'Aliyah'
+  },
+  'nav.mission': {
+    de: 'Mission',
+    en: 'Mission'
+  },
   'nav.project': {
     de: 'Das Projekt',
     en: 'The Project'
+  },
+  'nav.support': {
+    de: 'Unterstützen',
+    en: 'Support'
+  },
+  'nav.founder': {
+    de: 'Gründerin',
+    en: 'Founder'
   },
   'nav.about': {
     de: 'Über uns',
@@ -55,6 +75,30 @@ export const translations: Translation = {
     de: 'Ein Ort der Ausbildung, Würde und Gemeinschaft während der Wartezeit auf Alija.',
     en: 'A place of training, dignity, and community during the waiting period for Aliyah.'
   },
+  'vision.values.training.title': {
+    de: 'Ausbildung',
+    en: 'Training'
+  },
+  'vision.values.training.description': {
+    de: 'Wir bieten Ausbildung in der Baumwollverarbeitung: Spinnen, Weben, Nähen und Stickerei.',
+    en: 'We offer training in cotton processing: spinning, weaving, sewing, and embroidery.'
+  },
+  'vision.values.community.title': {
+    de: 'Gemeinschaft',
+    en: 'Community'
+  },
+  'vision.values.community.description': {
+    de: 'Wir schaffen Identität und stärken das Selbstvertrauen.',
+    en: 'We create identity and strengthen self-confidence.'
+  },
+  'vision.values.dignity.title': {
+    de: 'Würde',
+    en: 'Dignity'
+  },
+  'vision.values.dignity.description': {
+    de: 'Wir schaffen sinnvolle Arbeitsplätze – vom Stoff bis zum fertigen Produkt.',
+    en: 'We create meaningful jobs – from fabric to finished product.'
+  },
 
   // Aliyah Section
   'aliyah.title': {
@@ -68,6 +112,22 @@ export const translations: Translation = {
   'aliyah.challenge': {
     de: 'Was in dieser Übergangszeit fehlt ist ein sicherer Ort, eine Perspektive und eine Hand, die hilft!',
     en: 'What is missing during this transition period is a safe place, a perspective, and a helping hand!'
+  },
+  'aliyah.steps.waiting.title': {
+    de: 'Wartezeit',
+    en: 'Waiting Period'
+  },
+  'aliyah.steps.integration.title': {
+    de: 'Integration',
+    en: 'Integration'
+  },
+  'aliyah.steps.integration.description': {
+    de: 'Die Integration in Israel beginnt nach Anerkennung und Rückkehr, mit Unterstützung und besseren Lebensbedingungen.',
+    en: 'Integration in Israel begins after recognition and return, with support and better living conditions.'
+  },
+  'aliyah.steps.support.title': {
+    de: 'Unterstützung benötigt',
+    en: 'Support Needed'
   },
 
   // Mission Section
@@ -86,6 +146,30 @@ export const translations: Translation = {
   'mission.jewishWomen': {
     de: 'Gleichzeitig erleben jüdische Frauen in Äthiopien Ausgrenzung und Diskriminierung, was ihnen den Zugang zu Arbeit und sozialer Teilhabe erschwert.',
     en: 'Meanwhile, Jewish women in Ethiopia experience exclusion and discrimination, making it difficult for them to access work and social participation.'
+  },
+  'mission.features.training.title': {
+    de: 'Ausbildung',
+    en: 'Training'
+  },
+  'mission.features.training.description': {
+    de: 'Wir bieten Ausbildung in der Baumwollverarbeitung: Spinnen, Weben, Nähen und Stickerei.',
+    en: 'We offer training in cotton processing: spinning, weaving, sewing, and embroidery.'
+  },
+  'mission.features.work.title': {
+    de: 'Sinnvolle Arbeit',
+    en: 'Meaningful Work'
+  },
+  'mission.features.work.description': {
+    de: 'Wir schaffen sinnvolle Arbeitsplätze – vom Stoff bis zum fertigen Produkt.',
+    en: 'We create meaningful jobs – from fabric to finished product.'
+  },
+  'mission.features.community.title': {
+    de: 'Gemeinschaft',
+    en: 'Community'
+  },
+  'mission.features.community.description': {
+    de: 'Wir schaffen Identität und stärken das Selbstvertrauen.',
+    en: 'We create identity and strengthen self-confidence.'
   },
 
   // Project Section
@@ -125,6 +209,22 @@ export const translations: Translation = {
     de: 'Ökologischer Garten für Ernährung und Begegnung',
     en: 'Ecological Garden for Nutrition and Encounters'
   },
+  'project.features.sustainable.description': {
+    de: 'Nachhaltige Bauweise und Materialien für eine bessere Zukunft.',
+    en: 'Sustainable construction and materials for a better future.'
+  },
+  'project.features.workshop.description': {
+    de: 'Ein dedizierter Raum für Frauen zum Erlernen und Erstellen von Textilhandwerk.',
+    en: 'A dedicated space for women to learn and create textile crafts.'
+  },
+  'project.features.community.description': {
+    de: 'Räume für Bildung, Workshops und Gemeinschaftsbildung.',
+    en: 'Spaces for education, workshops, and community building.'
+  },
+  'project.features.garden.description': {
+    de: 'Ein ökologischer Garten für nachhaltige Ernährung und Gemeinschaftstreffen.',
+    en: 'An ecological garden for sustainable nutrition and community gatherings.'
+  },
 
   // Support Section
   'support.title': {
@@ -144,8 +244,8 @@ export const translations: Translation = {
     en: 'Whether one-time or regular – your support provides hope, perspective, and a home.'
   },
   'support.bank': {
-    de: 'Sparkasse Fürstenfeldbruck\nIBAN: DE 35 7005 3070 0032 1233 82\nBIC: BYLADEM1FFB',
-    en: 'Sparkasse Fürstenfeldbruck\nIBAN: DE 35 7005 3070 0032 1233 82\nBIC: BYLADEM1FFB'
+    de: 'Sparkasse Fürstenfeldbruck',
+    en: 'Sparkasse Fürstenfeldbruck'
   },
   'support.address': {
     de: 'Herzogstandstr. 11a · 82140 Olching',
@@ -154,6 +254,22 @@ export const translations: Translation = {
   'support.donate': {
     de: 'Jetzt spenden',
     en: 'Donate Now'
+  },
+  'support.options.donate.title': {
+    de: 'Spenden',
+    en: 'Donate'
+  },
+  'support.options.share.title': {
+    de: 'Teilen',
+    en: 'Share'
+  },
+  'support.options.contact.title': {
+    de: 'Kontakt',
+    en: 'Contact'
+  },
+  'support.options.contact.description': {
+    de: 'Kontaktieren Sie uns, um mehr darüber zu erfahren, wie Sie helfen können.',
+    en: 'Get in touch to learn more about how you can help.'
   },
 
   // Founder Section
@@ -180,6 +296,22 @@ export const translations: Translation = {
   'founder.future': {
     de: 'Als Nächstes möchten wir die Werkstatt mit Web- und Nähmaschinen ausstatten, um den Umgang mit Garnen und Stoffen zu erlernen und eigenständig produzieren zu können.',
     en: 'Next, we want to equip the workshop with weaving and sewing machines to learn how to work with yarns and fabrics and produce independently.'
+  },
+  'founder.milestones.dream.title': {
+    de: 'Der Traum',
+    en: 'The Dream'
+  },
+  'founder.milestones.recognition.title': {
+    de: 'Anerkennung',
+    en: 'Recognition'
+  },
+  'founder.milestones.future.title': {
+    de: 'Zukunftsziele',
+    en: 'Future Goals'
+  },
+  'founder.quote': {
+    de: 'Schließen Sie sich uns an – für eine gerechtere Zukunft voller Würde, Kreativität und Gemeinschaft.',
+    en: 'Join us – for a more just future full of dignity, creativity, and community.'
   },
 
   // Contact Section

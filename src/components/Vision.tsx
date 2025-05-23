@@ -8,18 +8,18 @@ const Vision = () => {
   const values = [
     {
       icon: <GraduationCap className="w-8 h-8 text-[#2E8B57]" />,
-      title: 'Training',
-      description: 'We offer training in cotton processing: spinning, weaving, sewing, and embroidery.'
+      title: t('vision.values.training.title'),
+      description: t('vision.values.training.description')
     },
     {
       icon: <Users className="w-8 h-8 text-[#2E8B57]" />,
-      title: 'Community',
-      description: 'We create identity and strengthen self-confidence.'
+      title: t('vision.values.community.title'),
+      description: t('vision.values.community.description')
     },
     {
       icon: <Heart className="w-8 h-8 text-[#2E8B57]" />,
-      title: 'Dignity',
-      description: 'We create meaningful jobs – from fabric to finished product.'
+      title: t('vision.values.dignity.title'),
+      description: t('vision.values.dignity.description')
     }
   ];
 

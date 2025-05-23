@@ -59,27 +59,27 @@ const Mission = () => {
             <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-[#2E8B57]/10 mb-6 mx-auto">
               <Heart className="w-8 h-8 text-[#2E8B57]" />
             </div>
-            <h3 className="text-xl font-semibold text-center mb-4 text-gray-900">Training</h3>
+            <h3 className="text-xl font-semibold text-center mb-4 text-gray-900">{t('mission.features.training.title')}</h3>
             <p className="text-gray-600 text-center leading-relaxed">
-              We offer training in cotton processing: spinning, weaving, sewing, and embroidery.
+              {t('mission.features.training.description')}
             </p>
           </div>
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-[#2E8B57]/10 mb-6 mx-auto">
               <Leaf className="w-8 h-8 text-[#2E8B57]" />
             </div>
-            <h3 className="text-xl font-semibold text-center mb-4 text-gray-900">Meaningful Work</h3>
+            <h3 className="text-xl font-semibold text-center mb-4 text-gray-900">{t('mission.features.work.title')}</h3>
             <p className="text-gray-600 text-center leading-relaxed">
-              We create meaningful jobs – from fabric to finished product.
+              {t('mission.features.work.description')}
             </p>
           </div>
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-[#2E8B57]/10 mb-6 mx-auto">
               <Users className="w-8 h-8 text-[#2E8B57]" />
             </div>
-            <h3 className="text-xl font-semibold text-center mb-4 text-gray-900">Community</h3>
+            <h3 className="text-xl font-semibold text-center mb-4 text-gray-900">{t('mission.features.community.title')}</h3>
             <p className="text-gray-600 text-center leading-relaxed">
-              We create identity and strengthen self-confidence.
+              {t('mission.features.community.description')}
             </p>
           </div>
         </div>

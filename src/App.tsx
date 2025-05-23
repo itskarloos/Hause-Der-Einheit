@@ -5,7 +5,9 @@ import MainApp from './MainApp';
 function App() {
   return (
     <LanguageProvider>
-      <MainApp />
+      <div className="scroll-smooth">
+        <MainApp />
+      </div>
     </LanguageProvider>
   );
 }
