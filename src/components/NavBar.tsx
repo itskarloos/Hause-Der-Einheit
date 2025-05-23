@@ -151,49 +151,50 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
       >
         {/* Backdrop */}
         <div 
-          className={`absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300
+          className={`absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300
             ${isMenuOpen ? 'opacity-100' : 'opacity-0'}`}
           onClick={() => setIsMenuOpen(false)}
         />
 
         {/* Menu Panel */}
         <div 
-          className={`absolute top-0 right-0 h-full w-[280px] bg-white shadow-xl transition-transform duration-300 ease-in-out
-            ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
-          style={{ 
-            top: isScrolled ? '64px' : '80px',
-            height: `calc(100vh - ${isScrolled ? '64px' : '80px'})`
-          }}
+          className={`absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-300
+            ${isMenuOpen ? 'opacity-100' : 'opacity-0'}`}
         >
-          <div className="flex flex-col h-full">
-            {/* Language Toggle at the top */}
-            <div className="p-4 border-b border-gray-100">
-              <button
-                onClick={() => {
-                  toggleLanguage();
-                  setIsMenuOpen(false);
-                }}
-                className="flex items-center w-full px-4 py-3 text-gray-800 hover:text-[#2E8B57] hover:bg-gray-50 rounded-lg transition-all duration-300"
+          {/* Close button */}
+          <button
+            onClick={() => setIsMenuOpen(false)}
+            className="absolute top-8 left-8 text-white hover:text-[#2E8B57] transition-all duration-300"
+            aria-label="Close menu"
+          >
+            <X className="h-6 w-6" />
+          </button>
+          
+          {/* Navigation Links */}
+          <div className="flex flex-col items-center space-y-6">
+            {menuItems.map((item) => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                onClick={(e) => { e.preventDefault(); handleItemClick(item.id); }}
+                className={`text-lg text-white hover:text-[#2E8B57] transition-all duration-300
+                  ${activeSection === item.id ? 'text-[#2E8B57]' : ''}`}
               >
-                <Globe className="w-5 h-5 mr-2" />
-                {language.toUpperCase()}
-              </button>
-            </div>
+                {item.label}
+              </a>
+            ))}
             
-            {/* Navigation Links */}
-            <div className="flex-1 px-4 pt-4 pb-4 space-y-1 overflow-y-auto">
-              {menuItems.map((item) => (
-                <a
-                  key={item.id}
-                  href={`#${item.id}`}
-                  onClick={(e) => { e.preventDefault(); handleItemClick(item.id); }}
-                  className={`block px-4 py-3 text-gray-800 hover:text-[#2E8B57] hover:bg-gray-50 rounded-lg transition-all duration-300
-                    ${activeSection === item.id ? 'text-[#2E8B57] bg-gray-50' : ''}`}
-                >
-                  {item.label}
-                </a>
-              ))}
-            </div>
+            {/* Language Toggle */}
+            <button
+              onClick={() => {
+                toggleLanguage();
+                setIsMenuOpen(false);
+              }}
+              className="flex items-center mt-4 px-4 py-2 text-white hover:text-[#2E8B57] transition-all duration-300 border border-white/30 rounded-full hover:border-[#2E8B57]"
+            >
+              <Globe className="w-5 h-5 mr-2" />
+              {language.toUpperCase()}
+            </button>
           </div>
         </div>
       </div>
