@@ -26,68 +26,48 @@ export const translations: Translation = {
 
   // Hero Section
   'hero.welcome': {
-    de: 'Willkommen bei Haus der Einheit',
-    en: 'Welcome to Haus der Einheit'
-  },
-  'hero.description': {
-    de: 'Ein Ort der Hoffnung und Einheit',
-    en: 'A Place of Hope and Unity'
+    de: 'Haus der Einheit',
+    en: 'Haus der Einheit'
   },
   'hero.subtitle': {
-    de: '"Haus der Einheit" bedeutet aus dem hebräischen übersetzt: "Haus der Mütter". Ein Haus als Zufluchtsort, für zwei marginalisierte Gruppen, den Holzträgerinnen und den jüdischen Frauen in Addis Abeba Äthiopien.',
-    en: '"Haus der Einheit," translated from Hebrew, means "House of Mothers." It\'s a sanctuary for two marginalized groups: the wood carriers and Jewish women in Addis Ababa, Ethiopia.'
+    de: 'Bet Ima – "Haus der Mütter"',
+    en: 'Bet Ima – "House of Mothers"'
+  },
+  'hero.description': {
+    de: 'Hoffnung geben. Heimat ermöglichen. Hilfe zur Selbsthilfe.',
+    en: 'Giving hope. Enabling home. Help for self-help.'
   },
   'hero.cta': {
     de: 'Mehr entdecken',
     en: 'Discover More'
   },
 
-  // About Section
-  'about.title': {
-    de: 'Über uns',
-    en: 'About Us'
+  // Vision Section
+  'vision.title': {
+    de: 'Die Vision',
+    en: 'The Vision'
   },
-  'about.history': {
-    de: 'Unsere Geschichte',
-    en: 'Our History'
+  'vision.subtitle': {
+    de: 'Bet Ima – "Haus der Mütter"',
+    en: 'Bet Ima – "House of Mothers"'
   },
-  'about.description': {
-    de: 'Jeden Tag legen die Holzträgerinnen unzählige Kilometer in den Bergen rund um Addis Abeba, der Hauptstadt Äthiopiens, zurück. Sie sammeln Holz und tragen die schwere Last auf dem Rücken wieder runter um es in der Stadt für eine magere Summe zu verkaufen, von der sie sich gerade so über den Tag retten können. Währenddessen werden jüdische Frauen häufig aufgrund ihres Glaubens diskriminiert und aus der Gesellschaft ausgegrenzt, was ihren Zugang zu Arbeit und sozialen Gemeinschaften einschränkt.',
-    en: 'Every day, wood carriers traverse countless kilometers in the mountains around Addis Ababa, Ethiopia\'s capital. They collect wood and carry heavy loads on their backs down to the city, selling it for a meager sum that barely sustains them day to day. Meanwhile, Jewish women often face discrimination due to their faith and are marginalized from society, limiting their access to work and social communities.'
-  },
-  'about.link': {
-    de: 'Mehr über uns',
-    en: 'Learn More'
+  'vision.description': {
+    de: 'Ein Ort der Ausbildung, Würde und Gemeinschaft während der Wartezeit auf Alija.',
+    en: 'A place of training, dignity, and community during the waiting period for Aliyah.'
   },
 
-  // Project Section
-  'project.title': {
-    de: 'Das Projekt',
-    en: 'The Project'
+  // Aliyah Section
+  'aliyah.title': {
+    de: 'Der Weg der Rückkehr Alija',
+    en: 'The Path of Return - Aliyah'
   },
-  'project.vision': {
-    de: 'Unsere Vision',
-    en: 'Our Vision'
+  'aliyah.description': {
+    de: 'Das israelische Rückkehrprogramm – ermöglicht jüdischstämmigen Menschen die Heimkehr nach Israel. Doch der Weg ist lang: Die Prüfung der Ansprüche dauert Monate bis Jahre. Erst nach der Anerkennung und Rückkehr beginnt die Integration in Israel – mit Unterstützung und besseren Lebensbedingungen.',
+    en: 'The Israeli return program – enables people of Jewish descent to return home to Israel. But the path is long: The examination of claims takes months to years. Only after recognition and return does integration in Israel begin – with support and better living conditions.'
   },
-  'project.description': {
-    de: 'Haus der Einheit wird am Stadtrand von Addis Abeba, in der Nähe des malerischen "Kotebe"-Berges, errichtet. Die geplante Frauenwerkstatt wird das Herzstück unserer täglichen Aktivitäten sein und sich auf handgefertigte, umweltfreundliche Kleidung spezialisieren. Zur Zeit wird das Haus fertiggestellt. Haus der Einheit geht über vier Wände hinaus; es ist ein Symbol der Hoffnung geboren aus unserem Glauben. Schließen Sie sich uns an, um gemeinsam positive Veränderungen zu schaffen.',
-    en: 'Haus der Einheit is being built on the outskirts of Addis Ababa, near the scenic "Kotebe" mountain. The planned women\'s workshop will be the heart of our daily activities, specializing in handcrafted, eco-friendly clothing. Currently, the house is being completed. Haus der Einheit goes beyond four walls; it is a symbol of hope born from our faith. Join us in creating positive change together.'
-  },
-  'project.features.sustainable': {
-    de: 'Nachhaltige Bauweise und Materialien',
-    en: 'Sustainable Construction and Materials'
-  },
-  'project.features.workshop': {
-    de: 'Integrierte Frauenwerkstatt',
-    en: 'Integrated Women\'s Workshop'
-  },
-  'project.features.community': {
-    de: 'Gemeinschaftsräume für Workshops',
-    en: 'Community Spaces for Workshops'
-  },
-  'project.features.garden': {
-    de: 'Ökologischer Garten',
-    en: 'Ecological Garden'
+  'aliyah.challenge': {
+    de: 'Was in dieser Übergangszeit fehlt ist ein sicherer Ort, eine Perspektive und eine Hand, die hilft!',
+    en: 'What is missing during this transition period is a safe place, a perspective, and a helping hand!'
   },
 
   // Mission Section
@@ -95,59 +75,55 @@ export const translations: Translation = {
     de: 'Unsere Mission & Vision',
     en: 'Our Mission & Vision'
   },
-  'mission.empowerment': {
-    de: 'Empowerment',
-    en: 'Empowerment'
+  'mission.description': {
+    de: 'Haus der Einheit – aus dem Hebräischen übersetzt "Haus der Mütter" – ist ein Zufluchtsort für zwei marginalisierte Gruppen in Addis Abeba: die Holzträgerinnen und jüdische Frauen.',
+    en: 'Haus der Einheit – translated from Hebrew as "House of Mothers" – is a sanctuary for two marginalized groups in Addis Ababa: wood carriers and Jewish women.'
   },
-  'mission.empowerment.desc': {
-    de: 'Wir stärken Menschen und fördern ihre Talente.',
-    en: 'We empower people and nurture their talents.'
+  'mission.woodCarriers': {
+    de: 'Tag für Tag legen die Holzträgerinnen weite Strecken in den umliegenden Bergen zurück. Sie sammeln Brennholz, tragen es auf dem Rücken in die Stadt und verkaufen es dort für einen geringen Betrag – oft reicht dieser kaum zum Überleben.',
+    en: 'Day after day, wood carriers travel long distances in the surrounding mountains. They collect firewood, carry it on their backs to the city, and sell it for a small amount – often barely enough to survive.'
   },
-  'mission.sustainability': {
-    de: 'Nachhaltigkeit',
-    en: 'Sustainability'
-  },
-  'mission.sustainability.desc': {
-    de: 'Wir handeln im Einklang mit der Natur.',
-    en: 'We act in harmony with nature.'
-  },
-  'mission.community': {
-    de: 'Gemeinschaft',
-    en: 'Community'
-  },
-  'mission.community.desc': {
-    de: 'Wir schaffen Räume für Begegnung und Austausch.',
-    en: 'We create spaces for connection and exchange.'
+  'mission.jewishWomen': {
+    de: 'Gleichzeitig erleben jüdische Frauen in Äthiopien Ausgrenzung und Diskriminierung, was ihnen den Zugang zu Arbeit und sozialer Teilhabe erschwert.',
+    en: 'Meanwhile, Jewish women in Ethiopia experience exclusion and discrimination, making it difficult for them to access work and social participation.'
   },
 
-  // Workshop Section
-  'workshop.title': {
-    de: 'Die Frauenwerkstatt',
-    en: 'The Women\'s Workshop'
+  // Project Section
+  'project.title': {
+    de: 'Das Projekt',
+    en: 'The Project'
   },
-  'workshop.subtitle': {
-    de: 'Ein Ort der Kreativität und des Lernens',
-    en: 'A Place of Creativity and Learning'
+  'project.location': {
+    de: 'Am Stadtrand von Addis Abeba, nahe dem malerischen Kotebe-Berg, entsteht Haus der Einheit – ein Ort des Aufbruchs und der Begegnung.',
+    en: 'On the outskirts of Addis Ababa, near the scenic Kotebe Mountain, Haus der Einheit is emerging – a place of new beginnings and encounters.'
   },
-  'workshop.description': {
-    de: 'In unserer Frauenwerkstatt entstehen nicht nur handgefertigte Produkte, sondern auch starke Gemeinschaften. Hier lernen Frauen neue Fähigkeiten, tauschen Erfahrungen aus und unterstützen sich gegenseitig auf ihrem Weg zur Selbstständigkeit.',
-    en: 'In our women\'s workshop, we create not only handcrafted products but also strong communities. Here, women learn new skills, share experiences, and support each other on their path to independence.'
+  'project.workshop': {
+    de: 'Die integrierte Frauenwerkstatt bildet das Herzstück des Projekts. Hier entsteht umweltfreundliche, handgefertigte Kleidung – begleitet von Bildung, Gemeinschaft und Hoffnung.',
+    en: 'The integrated women\'s workshop forms the heart of the project. Here, eco-friendly, handcrafted clothing is created – accompanied by education, community, and hope.'
   },
-  'workshop.crafts': {
-    de: 'Handarbeit',
-    en: 'Crafts'
+  'project.meaning': {
+    de: 'Doch Haus der Einheit ist mehr als ein Gebäude – es ist ein Zeichen gelebter Nächstenliebe und ein Ort, an dem aus Glauben Zukunft wächst.',
+    en: 'But Haus der Einheit is more than a building – it is a sign of lived charity and a place where future grows from faith.'
   },
-  'workshop.crafts.desc': {
-    de: 'Traditionelle und moderne Techniken',
-    en: 'Traditional and Modern Techniques'
+  'project.features': {
+    de: 'Was das Haus der Einheit ausmacht:',
+    en: 'What makes Haus der Einheit special:'
   },
-  'workshop.workshops': {
-    de: 'Workshops',
-    en: 'Workshops'
+  'project.features.sustainable': {
+    de: 'Nachhaltige Bauweise und Materialien',
+    en: 'Sustainable Construction and Materials'
   },
-  'workshop.workshops.desc': {
-    de: 'Regelmäßige Kurse und Schulungen',
-    en: 'Regular Courses and Training'
+  'project.features.workshop': {
+    de: 'Frauenwerkstatt für textile Handarbeit',
+    en: 'Women\'s Workshop for Textile Crafts'
+  },
+  'project.features.community': {
+    de: 'Räume für Bildung und Workshops',
+    en: 'Spaces for Education and Workshops'
+  },
+  'project.features.garden': {
+    de: 'Ökologischer Garten für Ernährung und Begegnung',
+    en: 'Ecological Garden for Nutrition and Encounters'
   },
 
   // Support Section
@@ -156,22 +132,64 @@ export const translations: Translation = {
     en: 'Support Us'
   },
   'support.subtitle': {
-    de: 'Ihre Spende macht einen Unterschied',
-    en: 'Your Donation Makes a Difference'
+    de: 'Ihre Spende macht einen Unterschied... um Leben zu verändern.',
+    en: 'Your donation makes a difference... to change lives.'
+  },
+  'support.description': {
+    de: 'Wir freuen uns über jede Form der Unterstützung – ob durch Interesse, Weitererzählen oder eine Spende. Gemeinsam können wir viel bewegen.',
+    en: 'We appreciate any form of support – whether through interest, sharing, or a donation. Together we can make a difference.'
+  },
+  'support.donation': {
+    de: 'Ob einmalig oder regelmäßig – Ihre Unterstützung schenkt Hoffnung, Perspektive und ein Zuhause.',
+    en: 'Whether one-time or regular – your support provides hope, perspective, and a home.'
   },
   'support.bank': {
-    de: 'Bank',
-    en: 'Bank'
+    de: 'Sparkasse Fürstenfeldbruck\nIBAN: DE 35 7005 3070 0032 1233 82\nBIC: BYLADEM1FFB',
+    en: 'Sparkasse Fürstenfeldbruck\nIBAN: DE 35 7005 3070 0032 1233 82\nBIC: BYLADEM1FFB'
+  },
+  'support.address': {
+    de: 'Herzogstandstr. 11a · 82140 Olching',
+    en: 'Herzogstandstr. 11a · 82140 Olching'
   },
   'support.donate': {
     de: 'Jetzt spenden',
     en: 'Donate Now'
   },
 
+  // Founder Section
+  'founder.title': {
+    de: 'Über die Gründerin',
+    en: 'About the Founder'
+  },
+  'founder.name': {
+    de: 'Hanna Heinrich',
+    en: 'Hanna Heinrich'
+  },
+  'founder.role': {
+    de: 'Geboren in Äthiopien, Gründerin des Projektes Bet Ima',
+    en: 'Born in Ethiopia, Founder of the Bet Ima Project'
+  },
+  'founder.story': {
+    de: 'Hoffnungslos unterdrückten und minderbemittelten Frauen und Müttern zu helfen, die in einer Gesellschaft voll Ablehnung und ohne Zugang zum sozialen System leben, ist ein lang gehegter Traum.',
+    en: 'Helping hopelessly oppressed and disadvantaged women and mothers who live in a society full of rejection and without access to the social system has been a long-cherished dream.'
+  },
+  'founder.progress': {
+    de: 'Seit dem Jahr 2023 ist der gemeinnützige Verein Haus der Einheit Äthiopien und das Hilfsprojekt Bet Ima offiziell als gemeinnützige Organisationen anerkannt – dank der engagierten Arbeit unserer Projektleiterin Kebron.',
+    en: 'Since 2023, the non-profit association Haus der Einheit Ethiopia and the Bet Ima aid project have been officially recognized as non-profit organizations – thanks to the dedicated work of our project manager Kebron.'
+  },
+  'founder.future': {
+    de: 'Als Nächstes möchten wir die Werkstatt mit Web- und Nähmaschinen ausstatten, um den Umgang mit Garnen und Stoffen zu erlernen und eigenständig produzieren zu können.',
+    en: 'Next, we want to equip the workshop with weaving and sewing machines to learn how to work with yarns and fabrics and produce independently.'
+  },
+
   // Contact Section
   'contact.title': {
     de: 'Kontakt',
     en: 'Contact'
+  },
+  'contact.subtitle': {
+    de: 'Sie möchten mehr erfahren oder sich engagieren? Kontaktieren Sie uns – wir freuen uns über einen Austausch, Gebet, Partnerschaft und neue Ideen!',
+    en: 'Would you like to learn more or get involved? Contact us – we look forward to exchange, prayer, partnership, and new ideas!'
   },
   'contact.name': {
     de: 'Name',
@@ -193,6 +211,10 @@ export const translations: Translation = {
     de: 'Nachricht senden',
     en: 'Send Message'
   },
+  'contact.info': {
+    de: 'Kontaktinformationen',
+    en: 'Contact Information'
+  },
 
   // Footer
   'footer.description': {
@@ -210,57 +232,5 @@ export const translations: Translation = {
   'footer.copyright': {
     de: '© 2024 Haus der Einheit. Alle Rechte vorbehalten.',
     en: '© 2024 Haus der Einheit. All rights reserved.'
-  },
-
-  // Values Section
-  'values.empowerment.title': {
-    de: 'Empowerment',
-    en: 'Empowerment'
-  },
-  'values.empowerment.description': {
-    de: 'Unterstützung und Förderung von Frauen durch nachhaltige Arbeitsmöglichkeiten.',
-    en: 'Supporting and uplifting women through sustainable work opportunities.'
-  },
-  'values.community.title': {
-    de: 'Gemeinschaft',
-    en: 'Community'
-  },
-  'values.community.description': {
-    de: 'Aufbau starker Verbindungen und Förderung eines unterstützenden Umfelds.',
-    en: 'Building strong connections and fostering a supportive environment.'
-  },
-  'values.sustainability.title': {
-    de: 'Nachhaltigkeit',
-    en: 'Sustainability'
-  },
-  'values.sustainability.description': {
-    de: 'Entwicklung umweltfreundlicher Lösungen und nachhaltiger Praktiken.',
-    en: 'Creating eco-friendly solutions and sustainable practices.'
-  },
-
-  // Founder Section
-  'founder.title': {
-    de: 'Das sind wir bei "Haus der Einheit"',
-    en: 'Meet us at "Haus der Einheit"'
-  },
-  'founder.name': {
-    de: 'Hanna Heinrich',
-    en: 'Hanna Heinrich'
-  },
-  'founder.role': {
-    de: 'Projektgründerin von Haus der Einheit und Mitbegründerin von "Haus der Einheit e.V."',
-    en: 'Project Founder of Haus der Einheit and Co-founder of "Haus der Einheit e.V."'
-  },
-  'founder.story': {
-    de: 'Der Aufbau von Haus der Einheit ist ein lang gehegter Traum für mein Heimatland, und vor zwei Jahren haben mein Mann Christian und ich mit dem Bau dieses Hauses aus eigenen Mitteln begonnen. Wir nähern uns der Vollendung des Baus und freuen uns, diese Reise Hand in Hand mit dem "Haus der Einheit e. V." fortzusetzen.',
-    en: 'Building Haus der Einheit has been a long-cherished dream for my homeland, and two years ago, my husband Christian and I began construction of this house using our own resources. We are approaching the completion of the building and are excited to continue this journey hand in hand with "Haus der Einheit e.V."'
-  },
-  'founder.progress': {
-    de: 'Vor einem Jahr haben wir die NGO-Niederlassung von "Haus der Einheit e.V." in Äthiopien gegründet. Unter der Leitung unserer jungen und motivierten Projektmanagerin vor Ort, Kebron haben wir uns durch die bürokratischen Abläufe gekämpft und besitzen nun den offiziellen Status einer gemeinnützigen Organisation in Äthiopien.',
-    en: 'A year ago, we established the NGO branch of "Haus der Einheit e.V." in Ethiopia. Under the leadership of our young and motivated local project manager, Kebron, we have navigated through the bureaucratic processes and now have official non-profit status in Ethiopia.'
-  },
-  'founder.future': {
-    de: 'Unser nächster Meilenstein ist die Fertigstellung des Hauses und die Einrichtung der Werkstatt mitsamt der Ausstattung, Web- & Nähmaschinen und weitere benötigte Materialien. Wir haben uns für das nächste Jahr ein ehrgeiziges Ziel gesetzt. Unterstützen Sie uns, diese Vision Wirklichkeit werden zu lassen!',
-    en: 'Our next milestone is completing the house and setting up the workshop with equipment, weaving & sewing machines, and other necessary materials. We have set ourselves an ambitious goal for the next year. Support us in making this vision a reality!'
-  },
+  }
 };

@@ -3,14 +3,14 @@ import { Menu, X, Globe } from 'lucide-react';
 import { LanguageContext } from './contexts/LanguageContext';
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
-import About from './components/About';
-import Project from './components/Project';
+import Vision from './components/Vision';
+import Aliyah from './components/Aliyah';
 import Mission from './components/Mission';
-import Workshop from './components/Workshop';
+import Project from './components/Project';
 import Support from './components/Support';
+import Founder from './components/founder';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Founder from './components/founder';
 
 function MainApp() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,10 +26,10 @@ function MainApp() {
       />
       <main>
         <Hero />
-        <About />
-        <Project />
+        <Vision />
+        <Aliyah />
         <Mission />
-        <Workshop />
+        <Project />
         <Support />
         <Founder />
         <Contact />
