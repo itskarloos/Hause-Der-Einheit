@@ -166,7 +166,22 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
           }}
         >
           <div className="flex flex-col h-full">
-            <div className="flex-1 px-4 pt-6 pb-4 space-y-1 overflow-y-auto">
+            {/* Language Toggle at the top */}
+            <div className="p-4 border-b border-gray-100">
+              <button
+                onClick={() => {
+                  toggleLanguage();
+                  setIsMenuOpen(false);
+                }}
+                className="flex items-center w-full px-4 py-3 text-gray-800 hover:text-[#2E8B57] hover:bg-gray-50 rounded-lg transition-all duration-300"
+              >
+                <Globe className="w-5 h-5 mr-2" />
+                {language.toUpperCase()}
+              </button>
+            </div>
+            
+            {/* Navigation Links */}
+            <div className="flex-1 px-4 pt-4 pb-4 space-y-1 overflow-y-auto">
               {menuItems.map((item) => (
                 <a
                   key={item.id}
@@ -178,18 +193,6 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
                   {item.label}
                 </a>
               ))}
-            </div>
-            <div className="p-4 border-t border-gray-100">
-              <button
-                onClick={() => {
-                  toggleLanguage();
-                  setIsMenuOpen(false);
-                }}
-                className="flex items-center w-full px-4 py-3 text-gray-800 hover:text-[#2E8B57] hover:bg-gray-50 rounded-lg transition-all duration-300"
-              >
-                <Globe className="w-5 h-5 mr-2" />
-                {language.toUpperCase()}
-              </button>
             </div>
           </div>
         </div>
