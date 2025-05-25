@@ -146,6 +146,20 @@ export default function Contact() {
             </div>
           </div>
         </div>
+
+        {/* Google Maps Embed */}
+        <div className="mt-16 rounded-2xl overflow-hidden shadow-xl">
+          <iframe
+            src="https://maps.app.goo.gl/HAyzigGP4i1FH1CT7"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full"
+          />
+        </div>
       </div>
     </section>
   )
