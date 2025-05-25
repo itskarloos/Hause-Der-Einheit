@@ -150,7 +150,7 @@ export default function Contact() {
         {/* Google Maps Embed */}
         <div className="mt-16 rounded-2xl overflow-hidden shadow-xl">
           <iframe
-            src="https://maps.app.goo.gl/HAyzigGP4i1FH1CT7"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.4997657225235!2d11.320204112016484!3d48.196988946903176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e7f03336e0c53%3A0xd78130c4dd0fecaf!2sHerzogstandstra%C3%9Fe%2011A%2C%2082140%20Olching%2C%20Germany!5e0!3m2!1sen!2set!4v1748184531203!5m2!1sen!2set"
             width="100%"
             height="450"
             style={{ border: 0 }}
