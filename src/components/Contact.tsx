@@ -115,7 +115,7 @@ export default function Contact() {
                 { 
                   icon: MapPin, 
                   label: "Adresse", 
-                  value: "Musterstraße 123\n12345 Musterstadt\nDeutschland",
+                  value: "Herzogstandstr. 11a · 82140 Olching",
                   href: "https://maps.google.com"
                 },
               ].map(({ icon: Icon, label, value, href }, index) => (

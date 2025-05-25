@@ -362,7 +362,7 @@ export const translations: Translation = {
     en: 'Follow Us'
   },
   'footer.copyright': {
-    de: '© 2024 Haus der Einheit. Alle Rechte vorbehalten.',
-    en: '© 2024 Haus der Einheit. All rights reserved.'
+    de: '© 2025 Haus der Einheit. Alle Rechte vorbehalten.',
+    en: '© 2025 Haus der Einheit. All rights reserved.'
   }
 };
