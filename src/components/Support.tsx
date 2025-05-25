@@ -70,11 +70,16 @@ const Support = () => {
             </div>
 
             <div className="text-center">
-              <button className="group relative inline-flex items-center justify-center px-8 py-3 rounded-full bg-[#2E8B57] text-white font-medium overflow-hidden transition-all duration-300 hover:bg-[#246B43] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#2E8B57] focus:ring-offset-2">
+              <a 
+                href="https://www.sparkasse-ffb.de/fi/home/login-online-banking.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center justify-center px-8 py-3 rounded-full bg-[#2E8B57] text-white font-medium overflow-hidden transition-all duration-300 hover:bg-[#246B43] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#2E8B57] focus:ring-offset-2"
+              >
                 <span className="relative">
                   {t('support.donate')}
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
