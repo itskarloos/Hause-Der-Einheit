@@ -2,7 +2,11 @@ import React from 'react';
 import { Instagram, Youtube, MessageCircle } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 
-const Footer = () => {
+interface FooterProps {
+  onNavigateToBlog?: () => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ onNavigateToBlog }) => {
   const { t } = useTranslation();
 
   return (
@@ -27,6 +31,14 @@ const Footer = () => {
                 <a href="#project" className="text-white/80 hover:text-white transition-colors">
                   {t('nav.project')}
                 </a>
+              </li>
+              <li>
+                <button 
+                  onClick={onNavigateToBlog}
+                  className="text-white/80 hover:text-white transition-colors text-left w-full"
+                >
+                  {t('nav.blog')}
+                </button>
               </li>
               <li>
                 <a href="#about" className="text-white/80 hover:text-white transition-colors">

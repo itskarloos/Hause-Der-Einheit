@@ -27,6 +27,10 @@ export const translations: Translation = {
     de: 'Das Projekt',
     en: 'The Project'
   },
+  'nav.blog': {
+    de: 'Blog',
+    en: 'Blog'
+  },
   'nav.support': {
     de: 'Unterstützen',
     en: 'Support'
@@ -346,6 +350,114 @@ export const translations: Translation = {
   'contact.info': {
     de: 'Kontaktinformationen',
     en: 'Contact Information'
+  },
+
+  // Blog Section
+  'blog.title': {
+    de: 'Blog',
+    en: 'Blog'
+  },
+  'blog.subtitle': {
+    de: 'Aktuelle Entwicklungen und Geschichten aus unserem Projekt',
+    en: 'Latest developments and stories from our project'
+  },
+  'blog.readMore': {
+    de: 'Weiterlesen',
+    en: 'Read More'
+  },
+  'blog.backToBlog': {
+    de: 'Zurück zum Blog',
+    en: 'Back to Blog'
+  },
+  'blog.publishedOn': {
+    de: 'Veröffentlicht am',
+    en: 'Published on'
+  },
+  'blog.author': {
+    de: 'Autor',
+    en: 'Author'
+  },
+  'blog.team': {
+    de: 'Das Team',
+    en: 'The Team'
+  },
+  'blog.comingSoon.title': {
+    de: 'Weitere Geschichten kommen bald',
+    en: 'More Stories Coming Soon'
+  },
+  'blog.comingSoon.description': {
+    de: 'Wir arbeiten an weiteren Geschichten und Updates. Bleiben Sie dran für die neuesten Entwicklungen aus unserem Projekt!',
+    en: 'We\'re working on more stories and updates. Stay tuned for the latest developments from our project!'
+  },
+  'nav.home': {
+    de: 'Startseite',
+    en: 'Home'
+  },
+  'blog.date': {
+    de: '5. August 2025',
+    en: 'August 5, 2025'
+  },
+
+  // First Blog Post
+  'blog.first.title': {
+    de: 'Spannende Entwicklungen in unserem Frauenprojekt in Addis Abeba!',
+    en: 'Exciting Developments in Our Women\'s Project in Addis Abeba!'
+  },
+  'blog.first.excerpt': {
+    de: 'Die letzten Monate waren eine Zeit großer Entwicklung und Veränderung für unser Frauenprojekt hier in Addis Abeba, und wir können es kaum erwarten, unseren Fortschritt mit Ihnen zu teilen!',
+    en: 'The last few months have been a period of great growth and change for our women\'s project here in Addis Abeba, and we couldn\'t be more excited to share our progress with you!'
+  },
+  'blog.first.workshop.title': {
+    de: 'Unsere Werkstatt ist bereit!',
+    en: 'Our Workshop is Ready!'
+  },
+  'blog.first.workshop.content': {
+    de: 'Nach monatelanger harter Arbeit sind das Haus und die Werkstatt endlich fertig! Wir haben unseren ersten Webstuhl und alles, was wir brauchen, um loszulegen, eingerichtet. Es ist ein riesiger Schritt für uns, denn in dieser Werkstatt wird die Magie passieren – hier werden Fähigkeiten erlernt, Kreativität fließen und schöne Produkte entstehen.',
+    en: 'After months of hard work, the house and workshop are finally complete! We\'ve set up our first loom and everything we need to get started. It\'s a huge step for us, as this workshop is where the magic will happen—where skills will be learned, creativity will flow, and beautiful products will be made.'
+  },
+  'blog.first.training.title': {
+    de: 'Die Ausbildung beginnt!',
+    en: 'Training Begins!'
+  },
+  'blog.first.training.content': {
+    de: 'Wir sind stolz darauf, bekannt zu geben, dass fünf Frauen offiziell mit ihrer Ausbildung im Spinnen, Weben und Nähen begonnen haben. Diese Frauen sind die ersten, die sich auf diese aufregende Reise begeben, und wir sind verpflichtet, ihnen die bestmögliche Ausbildung zu bieten. Um sie zu führen, haben wir eine erfahrene Lehrerin, die in den nächsten Monaten täglich mit ihnen arbeiten wird, um ihnen diese wesentlichen Handwerke zu vermitteln.',
+    en: 'We are proud to announce that five women have officially started their training in spinning, weaving, and sewing. These women are the first to embark on this exciting journey, and we are committed to providing them with the best training possible. To guide them, we have a skilled teacher who will be working with them daily over the next few months to help them master these essential crafts.'
+  },
+  'blog.first.partnership.title': {
+    de: 'Spannende Partnerschaft mit El Shalom',
+    en: 'Exciting Partnership with El Shalom'
+  },
+  'blog.first.partnership.content': {
+    de: 'Wir freuen uns auch, unsere Partnerschaft mit El Shalom bekannt zu geben, einer Kooperation, die sich der kostenlosen medizinischen Versorgung für marginalisierte Gemeinschaften in Äthiopien widmet. Die Ärzte von El Shalom reisen in verschiedene arme Gebiete, um medizinische Behandlung anzubieten, und sie werden auch in und um unser Projekt-Haus arbeiten. Ihre Mission stimmt mit unserer überein, einen positiven Einfluss auf unterversorgte Gemeinschaften zu haben, und wir sind stolz darauf, mit ihnen zusammenzuarbeiten.',
+    en: 'We are also thrilled to announce our partnership with El Shalom, a cooperation dedicated to providing free medical care for marginalized communities in Ethiopia. El Shalom\'s doctors are traveling to different poor areas to offer medical treatment, and they will be working in and around our project house as well. Their mission aligns with ours in making a positive impact on underserved communities, and we are proud to collaborate with them.'
+  },
+  'blog.first.order': {
+    de: 'Als Teil dieser Zusammenarbeit hat El Shalom eine Bestellung für 60 Stück traditioneller jüdischer Kleidung aufgegeben, die von den Frauen in unserer Werkstatt hergestellt werden. Diese Bestellung ist ein bedeutender Meilenstein für uns und markiert den Beginn unserer Fähigkeit, soziale Projekte durch unsere Arbeit zu unterstützen.',
+    en: 'As part of this collaboration, El Shalom has placed an order for 60 pieces of traditional Jewish clothing, which will be produced by the women in our workshop. This order is a significant milestone for us, and it marks the beginning of our ability to support social projects through our work.'
+  },
+  'blog.first.refining.title': {
+    de: 'Verfeinerung unseres Prozesses',
+    en: 'Refining Our Process'
+  },
+  'blog.first.refining.content': {
+    de: 'In den kommenden Wochen werden wir uns darauf konzentrieren, die Werkstatt und unseren Produktionsprozess zu verfeinern. Die erste Arbeitsrunde wird es uns ermöglichen, Bereiche zu identifizieren, die verbessert werden müssen, und wir werden die notwendigen Anpassungen vornehmen, um sicherzustellen, dass alles reibungslos läuft.',
+    en: 'In the coming weeks, we will focus on refining the workshop and our production process. The first round of work will allow us to identify areas that need improvement, and we\'ll make the necessary adjustments to ensure everything runs smoothly.'
+  },
+  'blog.first.future.title': {
+    de: 'Blick in die Zukunft',
+    en: 'Looking Ahead'
+  },
+  'blog.first.future.content': {
+    de: 'Unsere Priorität in den nächsten Monaten ist es, die Ausbildung unserer fünf Frauen fortzusetzen und gleichzeitig unsere ersten Produktionsstatistiken zu verfolgen. Sobald wir diesen ersten Zyklus abgeschlossen und Verbesserungen basierend auf dem Feedback vorgenommen haben, werden wir unser Ausbildungsprogramm erweitern, um 30 weitere Frauen einzuschließen. Das Ziel ist, dass diese Frauen nicht nur wertvolle Fähigkeiten erwerben, sondern auch nach Abschluss ihrer Ausbildung anderswo Arbeit finden.',
+    en: 'Our priority in the next few months is to continue the training of our five women, while also tracking our first production statistics. Once we\'ve completed this initial cycle and made improvements based on the feedback, we will expand our training program to include 30 more women. The goal is for these women to not only gain valuable skills but to also find work elsewhere after their training is completed.'
+  },
+  'blog.first.gratitude': {
+    de: 'Wir sind unglaublich dankbar für die Unterstützung, die wir bisher erhalten haben, und freuen uns darauf, weiter an unserer Mission zu arbeiten, Frauen zu stärken und nachhaltige Lebensgrundlagen zu schaffen. Bleiben Sie dran für weitere Updates, während wir voranschreiten!',
+    en: 'We are incredibly grateful for the support we\'ve received so far and are excited to continue working toward our mission of empowering women and creating sustainable livelihoods. Stay tuned for more updates as we move forward!'
+  },
+  'blog.first.thankYou': {
+    de: 'Vielen Dank, dass Sie Teil dieser Reise mit uns sind!',
+    en: 'Thank you for being part of this journey with us!'
   },
 
   // Footer

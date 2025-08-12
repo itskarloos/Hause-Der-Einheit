@@ -12,7 +12,11 @@ import Founder from './components/founder';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-function MainApp() {
+interface MainAppProps {
+  onNavigateToBlog: () => void;
+}
+
+function MainApp({ onNavigateToBlog }: MainAppProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, setLanguage } = useContext(LanguageContext);
 
@@ -23,6 +27,7 @@ function MainApp() {
         setIsMenuOpen={setIsMenuOpen}
         language={language}
         setLanguage={setLanguage}
+        onNavigateToBlog={onNavigateToBlog}
       />
       <main>
         <Hero />
@@ -34,7 +39,7 @@ function MainApp() {
         <Founder />
         <Contact />
       </main>
-      <Footer />
+      <Footer onNavigateToBlog={onNavigateToBlog} />
     </div>
   );
 }

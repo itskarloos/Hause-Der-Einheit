@@ -8,9 +8,10 @@ interface NavBarProps {
   setIsMenuOpen: (isOpen: boolean) => void;
   language: 'de' | 'en';
   setLanguage: (lang: 'de' | 'en') => void;
+  onNavigateToBlog?: () => void;
 }
 
-const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, setLanguage }) => {
+const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, setLanguage, onNavigateToBlog }) => {
   const { t } = useTranslation();
   const [isAtTop, setIsAtTop] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,6 +56,7 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
     { id: 'start', label: t('nav.start') },
     { id: 'vision', label: t('nav.vision') },
     { id: 'project', label: t('nav.project') },
+    { id: 'blog', label: t('nav.blog') },
     { id: 'support', label: t('nav.support') },
     { id: 'contact', label: t('nav.contact') },
   ];
@@ -65,6 +67,13 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
 
   const handleItemClick = (sectionId: string) => {
     if (isMenuOpen) setIsMenuOpen(false);
+    
+    // Special handling for blog navigation
+    if (sectionId === 'blog' && onNavigateToBlog) {
+      onNavigateToBlog();
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       const offset = 80; // Adjust this value based on your navbar height
