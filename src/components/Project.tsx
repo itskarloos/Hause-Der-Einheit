@@ -59,9 +59,7 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="text-center mb-12">
-          <h3 className="text-2xl font-semibold text-gray-900">{t('project.features')}</h3>
-        </div>
+        
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (

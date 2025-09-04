@@ -105,9 +105,9 @@ const BlogPost: React.FC<BlogPostProps> = ({ onBack }) => {
         {/* Hero Image */}
         <div className="mb-12">
           <img
-            src={blogImages[0]}
+            src={blogImages[1]}
             alt="Workshop and women working"
-            className="w-full h-96 object-cover rounded-2xl shadow-lg"
+            className="w-full h-[550px] object-cover rounded-2xl shadow-lg"
           />
         </div>
 
@@ -148,13 +148,24 @@ const BlogPost: React.FC<BlogPostProps> = ({ onBack }) => {
 
           {/* Training Section */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-[#2E8B57]">
-              {t('blog.first.training.title')}
-            </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               {t('blog.first.training.content')}
             </p>
             
+            
+          </section>
+
+          {/* Partnership Section */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-[#2E8B57]">
+              {t('blog.first.partnership.title')}
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              {t('blog.first.partnership.content')}
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              {t('blog.first.order')}
+            </p>
             {/* Training Images */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
               {blogImages.slice(8, 14).map((image, index) => (
@@ -171,19 +182,6 @@ const BlogPost: React.FC<BlogPostProps> = ({ onBack }) => {
                 </div>
               ))}
             </div>
-          </section>
-
-          {/* Partnership Section */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-[#2E8B57]">
-              {t('blog.first.partnership.title')}
-            </h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              {t('blog.first.partnership.content')}
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              {t('blog.first.order')}
-            </p>
           </section>
 
           {/* Refining Section */}
@@ -214,28 +212,6 @@ const BlogPost: React.FC<BlogPostProps> = ({ onBack }) => {
             <p className="text-xl text-[#2E8B57] font-semibold text-center">
               {t('blog.first.thankYou')}
             </p>
-          </section>
-
-          {/* Final Image Gallery */}
-          <section className="mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-              {t('blog.team')}
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {blogImages.slice(14, 22).map((image, index) => (
-                <div
-                  key={index}
-                  className="cursor-pointer group"
-                  onClick={() => openGallery(index + 15)}
-                >
-                  <img
-                    src={image}
-                    alt={`Team member ${index + 1}`}
-                    className="w-full h-32 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-              ))}
-            </div>
           </section>
         </article>
       </div>
