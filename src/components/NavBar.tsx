@@ -8,7 +8,7 @@ interface NavBarProps {
   setIsMenuOpen: (isOpen: boolean) => void;
   language: 'de' | 'en';
   setLanguage: (lang: 'de' | 'en') => void;
-  onNavigateToBlog?: () => void;
+  onNavigateToBlog?: (sectionId: string) => void;
 }
 
 const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, setLanguage, onNavigateToBlog }) => {
@@ -68,12 +68,13 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
   const handleItemClick = (sectionId: string) => {
     if (isMenuOpen) setIsMenuOpen(false);
     
-    // Special handling for blog navigation
-    if (sectionId === 'blog' && onNavigateToBlog) {
-      onNavigateToBlog();
+    // If we have a custom navigation handler, use it
+    if (onNavigateToBlog) {
+      onNavigateToBlog(sectionId);
       return;
     }
     
+    // Default behavior: scroll to section
     const element = document.getElementById(sectionId);
     if (element) {
       const offset = 80; // Adjust this value based on your navbar height

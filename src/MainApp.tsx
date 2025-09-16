@@ -27,7 +27,11 @@ function MainApp({ onNavigateToBlog }: MainAppProps) {
         setIsMenuOpen={setIsMenuOpen}
         language={language}
         setLanguage={setLanguage}
-        onNavigateToBlog={onNavigateToBlog}
+        onNavigateToBlog={(sectionId) => {
+          if (sectionId === 'blog') {
+            onNavigateToBlog();
+          }
+        }}
       />
       <main>
         <Hero />
