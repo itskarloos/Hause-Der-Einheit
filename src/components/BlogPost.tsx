@@ -82,11 +82,11 @@ const BlogPost: React.FC<BlogPostProps> = ({ onBack }) => {
             <ArrowLeft className="w-5 h-5" />
             <span>{t('blog.backToBlog')}</span>
           </button>
-          
+
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
             {t('blog.first.title')}
           </h1>
-          
+
           <div className="flex items-center space-x-6 text-sm text-white/80">
             <div className="flex items-center space-x-2">
               <Calendar className="w-4 h-4" />
@@ -126,7 +126,14 @@ const BlogPost: React.FC<BlogPostProps> = ({ onBack }) => {
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               {t('blog.first.workshop.content')}
             </p>
-            
+            {/* Training Section */}
+            <section className="mb-12">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                {t('blog.first.training.content')}
+              </p>
+
+
+            </section>
             {/* Workshop Images Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
               {blogImages.slice(1, 8).map((image, index) => (
@@ -140,20 +147,13 @@ const BlogPost: React.FC<BlogPostProps> = ({ onBack }) => {
                     alt={`Workshop ${index + 1}`}
                     className="w-full h-32 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
                   />
-                 
+
                 </div>
               ))}
             </div>
           </section>
 
-          {/* Training Section */}
-          <section className="mb-12">
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              {t('blog.first.training.content')}
-            </p>
-            
-            
-          </section>
+
 
           {/* Partnership Section */}
           <section className="mb-12">
@@ -225,14 +225,14 @@ const BlogPost: React.FC<BlogPostProps> = ({ onBack }) => {
           >
             <X className="w-8 h-8" />
           </button>
-          
+
           <div className="relative w-full h-full flex items-center justify-center p-8">
             <img
               src={blogImages[currentImageIndex]}
               alt={`Gallery image ${currentImageIndex + 1}`}
               className="max-w-full max-h-full object-contain"
             />
-            
+
             {/* Navigation Arrows */}
             <button
               onClick={prevImage}
@@ -240,14 +240,14 @@ const BlogPost: React.FC<BlogPostProps> = ({ onBack }) => {
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
-            
+
             <button
               onClick={nextImage}
               className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
-            
+
             {/* Image Counter */}
             <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-sm">
               {currentImageIndex + 1} / {blogImages.length}

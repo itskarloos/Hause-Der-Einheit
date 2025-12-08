@@ -68,16 +68,16 @@ export const translations: Translation = {
 
   // Vision Section
   'vision.title': {
-    de: 'Die Vision',
-    en: 'The Vision'
+    de: 'Unsere Vision',
+    en: 'Our Vision'
   },
   'vision.subtitle': {
-    de: 'Bet Ima – "Haus der Mütter"',
-    en: 'Bet Ima – "House of Mothers"'
+    de: 'Bet Ema – ein Ort, der Leben verändert',
+    en: 'Bet Ema – A Place That Changes Lives'
   },
   'vision.description': {
-    de: 'Ein Ort der Ausbildung, Würde und Gemeinschaft während der Wartezeit auf Alija.',
-    en: 'A place of training, dignity, and community during the waiting period for Aliyah.'
+    de: 'Frauen erhalten Ausbildung, sichere Arbeit und die Chance, in Würde zu leben. So entsteht neues Selbstvertrauen – und eine bessere Zukunft für ganze Familien.\n\nAm Stadtrand von Addis Abeba, am Fuße des malerischen Kotebe-Bergs, wächst Bet Ema – ein Ort, an dem Frauen neue Perspektiven finden und echte Begegnung geschieht.\n\nIm Herzen des Projekts arbeitet die Frauenwerkstatt. Hier erhalten Frauen eine fundierte Ausbildung und im Anschluss einen sicheren Arbeitsplatz. Sie fertigen umweltfreundliche, handgefertigte Kleidung und können dadurch in Würde leben.\n\nDie ersten Teilnehmerinnen geben ihr Wissen und ihre Erfahrungen an weitere Frauen weiter. So entsteht eine kontinuierliche Weitergabe von Können und Chancen – eine Bewegung, die Leben verändert.',
+    en: 'Women receive training, secure work, and the chance to live in dignity. This creates new self-confidence – and a better future for entire families.\n\nOn the outskirts of Addis Ababa, at the foot of the picturesque Kotebe Mountain, Bet Ema is growing – a place where women find new perspectives and genuine encounters happen.\n\nAt the heart of the project is the women\'s workshop. Here, women receive solid training and subsequently a secure job. They produce eco-friendly, handmade clothing and can thus live in dignity.\n\nThe first participants pass on their knowledge and experience to other women. This creates a continuous transfer of skills and opportunities – a movement that changes lives.'
   },
   'vision.values.training.title': {
     de: 'Ausbildung',
@@ -136,8 +136,8 @@ export const translations: Translation = {
 
   // Mission Section
   'mission.title': {
-    de: 'Unsere Mission & Vision',
-    en: 'Our Mission & Vision'
+    de: 'Unsere Mission',
+    en: 'Our Mission'
   },
   'mission.description': {
     de: 'Haus der Einheit – aus dem Hebräischen übersetzt "Haus der Mütter" – ist ein Zufluchtsort für zwei marginalisierte Gruppen in Addis Abeba: die Holzträgerinnen und jüdische Frauen.',
@@ -178,20 +178,16 @@ export const translations: Translation = {
 
   // Project Section
   'project.title': {
-    de: 'Das Projekt',
-    en: 'The Project'
+    de: 'Unsere Vision',
+    en: 'Our Vision'
   },
-  'project.location': {
-    de: 'Am Stadtrand von Addis Abeba, nahe dem malerischen Kotebe-Berg, entsteht Haus der Einheit – ein Ort des Aufbruchs und der Begegnung.',
-    en: 'On the outskirts of Addis Ababa, near the scenic Kotebe Mountain, Haus der Einheit is emerging – a place of new beginnings and encounters.'
+  'project.subtitle': {
+    de: 'Bet Ema – ein Ort, der Leben verändert',
+    en: 'Bet Ema – A Place That Changes Lives'
   },
-  'project.workshop': {
-    de: 'Die integrierte Frauenwerkstatt bildet das Herzstück des Projekts. Hier entsteht umweltfreundliche, handgefertigte Kleidung – begleitet von Bildung, Gemeinschaft und Hoffnung.',
-    en: 'The integrated women\'s workshop forms the heart of the project. Here, eco-friendly, handcrafted clothing is created – accompanied by education, community, and hope.'
-  },
-  'project.meaning': {
-    de: 'Doch Haus der Einheit ist mehr als ein Gebäude – es ist ein Zeichen gelebter Nächstenliebe und ein Ort, an dem aus Glauben Zukunft wächst.',
-    en: 'But Haus der Einheit is more than a building – it is a sign of lived charity and a place where future grows from faith.'
+  'project.description': {
+    de: 'Frauen erhalten Ausbildung, sichere Arbeit und die Chance, in Würde zu leben. So entsteht neues Selbstvertrauen – und eine bessere Zukunft für ganze Familien.\n\nAm Stadtrand von Addis Abeba, am Fuße des malerischen Kotebe-Bergs, wächst Bet Ema – ein Ort, an dem Frauen neue Perspektiven finden und echte Begegnung geschieht.\n\nIm Herzen des Projekts arbeitet die Frauenwerkstatt. Hier erhalten Frauen eine fundierte Ausbildung und im Anschluss einen sicheren Arbeitsplatz. Sie fertigen umweltfreundliche, handgefertigte Kleidung und können dadurch in Würde leben.\n\nDie ersten Teilnehmerinnen geben ihr Wissen und ihre Erfahrungen an weitere Frauen weiter. So entsteht eine kontinuierliche Weitergabe von Können und Chancen – eine Bewegung, die Leben verändert.',
+    en: 'Women receive training, secure work, and the chance to live in dignity. This creates new self-confidence – and a better future for entire families.\n\nOn the outskirts of Addis Ababa, at the foot of the picturesque Kotebe Mountain, Bet Ema is growing – a place where women find new perspectives and genuine encounters happen.\n\nAt the heart of the project is the women\'s workshop. Here, women receive solid training and subsequently a secure job. They produce eco-friendly, handmade clothing and can thus live in dignity.\n\nThe first participants pass on their knowledge and experience to other women. This creates a continuous transfer of skills and opportunities – a movement that changes lives.'
   },
   'project.features': {
     de: 'Was das Haus der Einheit ausmacht:',

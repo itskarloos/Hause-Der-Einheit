@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from '../hooks/useTranslation';
-import { ArrowRight, Clock, Home, Heart } from 'lucide-react';
+import { Clock, Home, Heart } from 'lucide-react';
+import { Reveal } from './Reveal';
 
 const Aliyah = () => {
   const { t } = useTranslation();
@@ -24,29 +25,31 @@ const Aliyah = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-[#F5F5DC]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">{t('aliyah.title')}</h2>
-          <div className="w-16 h-1 bg-[#2E8B57] mx-auto rounded-full"></div>
+    <section id="aliyah" className="py-24 bg-gradient-to-b from-white to-[#F5F5DC]">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <Reveal>
+            <h2 className="text-xl sm:text-2xl font-bold mb-6 text-gray-900">{t('aliyah.title')}</h2>
+            <div className="w-16 h-1 bg-[#2E8B57] mx-auto rounded-full"></div>
+          </Reveal>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="space-y-8">
-            {steps.map((step, index) => (
-              <div key={index} className="flex items-start space-x-6">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#2E8B57]/10">
+        <div className="space-y-12">
+          {steps.map((step, index) => (
+            <Reveal key={index} delay={0.2 + (index * 0.1)} width="100%">
+              <div className="flex flex-col sm:flex-row gap-6">
+                <div className="flex-shrink-0 mx-auto sm:mx-0">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#2E8B57]/10 text-[#2E8B57]">
                     {step.icon}
                   </div>
                 </div>
-                <div className="flex-1">
+                <div className="text-center sm:text-left">
                   <h3 className="text-lg font-semibold mb-3 text-gray-900">{step.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{step.description}</p>
+                  <p className="text-gray-600 leading-relaxed max-w-2xl">{step.description}</p>
                 </div>
               </div>
-            ))}
-          </div>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>

@@ -8,6 +8,9 @@ export default {
         'primary-dark': '#246B43',
         background: '#FAF9F6',
         accent: '#F5F5DC'
+      },
+      fontFamily: {
+        sans: ['Outfit', 'sans-serif'],
       }
     },
   },

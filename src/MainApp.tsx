@@ -3,7 +3,7 @@ import { Menu, X, Globe } from 'lucide-react';
 import { LanguageContext } from './contexts/LanguageContext';
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
-import Vision from './components/Vision';
+
 import Aliyah from './components/Aliyah';
 import Mission from './components/Mission';
 import Project from './components/Project';
@@ -22,7 +22,7 @@ function MainApp({ onNavigateToBlog }: MainAppProps) {
 
   return (
     <div className="min-h-screen bg-[#FAF9F6]">
-      <NavBar 
+      <NavBar
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         language={language}
@@ -35,7 +35,7 @@ function MainApp({ onNavigateToBlog }: MainAppProps) {
       />
       <main>
         <Hero />
-        <Vision />
+
         <Aliyah />
         <Mission />
         <Project />
