@@ -14,7 +14,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigateToBlog }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Haus der Einheit</h3>
+            <h3 className="text-xl font-semibold mb-4">Bet Ima</h3>
             <p className="text-white/80">
               {t('footer.description')}
             </p>
@@ -33,7 +33,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigateToBlog }) => {
                 </a>
               </li>
               <li>
-                <button 
+                <button
                   onClick={onNavigateToBlog}
                   className="text-white/80 hover:text-white transition-colors text-left w-full"
                 >

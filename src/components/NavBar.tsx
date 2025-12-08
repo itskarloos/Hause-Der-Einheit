@@ -133,7 +133,7 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
               <a href="#" className="block" onClick={(e) => { e.preventDefault(); handleItemClick('start'); }}>
                 <img
                   src={Logo}
-                  alt="Haus der Einheit"
+                  alt="Bet Ima"
                   className={`transition-all duration-300 ${isScrolled ? 'h-10' : 'h-14'}`}
                 />
               </a>
