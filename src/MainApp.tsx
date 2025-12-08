@@ -14,11 +14,32 @@ import Footer from './components/Footer';
 
 interface MainAppProps {
   onNavigateToBlog: () => void;
+  initialSection?: string;
+  clearInitialSection?: () => void;
 }
 
-function MainApp({ onNavigateToBlog }: MainAppProps) {
+function MainApp({ onNavigateToBlog, initialSection, clearInitialSection }: MainAppProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, setLanguage } = useContext(LanguageContext);
+
+  React.useEffect(() => {
+    if (initialSection) {
+      setTimeout(() => {
+        const element = document.getElementById(initialSection);
+        if (element) {
+          const offset = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+        if (clearInitialSection) clearInitialSection();
+      }, 100);
+    }
+  }, [initialSection, clearInitialSection]);
 
   return (
     <div className="min-h-screen bg-[#FAF9F6]">

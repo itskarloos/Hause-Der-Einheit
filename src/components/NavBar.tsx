@@ -9,9 +9,10 @@ interface NavBarProps {
   language: 'de' | 'en';
   setLanguage: (lang: 'de' | 'en') => void;
   onNavigateToBlog?: (sectionId: string) => void;
+  onNavigateToSection?: (sectionId: string) => void;
 }
 
-const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, setLanguage, onNavigateToBlog }) => {
+const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, setLanguage, onNavigateToBlog, onNavigateToSection }) => {
   const { t } = useTranslation();
   const [isAtTop, setIsAtTop] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -96,6 +97,9 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
         top: offsetPosition,
         behavior: 'smooth'
       });
+    } else if (onNavigateToSection) {
+      // If we are on a page where the section doesn't exist, use the callback
+      onNavigateToSection(sectionId);
     }
   };
 
