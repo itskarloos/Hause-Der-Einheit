@@ -5,12 +5,14 @@ import ext1 from '../assets/gallery/building-exterior-1.jpg';
 import ext2 from '../assets/gallery/building-exterior-2.jpg';
 import care1 from '../assets/gallery/medical-care-1.jpg';
 import care2 from '../assets/gallery/medical-care-2.jpg';
+import care3 from '../assets/gallery/medical-care-3.jpg';
 import reception from '../assets/gallery/reception-desk.jpg';
 
 const images = [
   { src: ext1, alt: 'Building Exterior 1' },
   { src: care1, alt: 'Medical Care Outreach' },
   { src: reception, alt: 'HDE Reception Desk' },
+  { src: care3, alt: 'Medical Examination' },
   { src: ext2, alt: 'Building Exterior 2' },
   { src: care2, alt: 'Medical Care 2' },
 ];
