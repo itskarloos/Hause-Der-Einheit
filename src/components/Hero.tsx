@@ -70,7 +70,7 @@ const Hero = () => {
               backgroundImage: `url(${slides[currentSlide].image})`,
             }}
           >
-            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/60" />
           </div>
         </motion.div>
       </AnimatePresence>
@@ -87,7 +87,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <h1
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 tracking-tight"
+                className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 tracking-tight"
               >
                 {t(slides[currentSlide].title)}
               </h1>

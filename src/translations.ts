@@ -226,6 +226,16 @@ export const translations: Translation = {
     en: 'An ecological garden for sustainable nutrition and community gatherings.'
   },
 
+  // Gallery Section
+  'gallery.title': {
+    de: 'Galerie',
+    en: 'Gallery'
+  },
+  'gallery.subtitle': {
+    de: 'Einblicke in unsere Arbeit und Gemeinschaft',
+    en: 'Glimpses into our work and community'
+  },
+
   // Support Section
   'support.title': {
     de: 'Unterstützen Sie uns',
