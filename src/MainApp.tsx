@@ -7,6 +7,7 @@ import Hero from './components/Hero';
 import Aliyah from './components/Aliyah';
 import Mission from './components/Mission';
 import Project from './components/Project';
+import Union from './components/Union';
 import Gallery from './components/Gallery';
 import Support from './components/Support';
 import Founder from './components/founder';
@@ -61,6 +62,7 @@ function MainApp({ onNavigateToBlog, initialSection, clearInitialSection }: Main
         <Aliyah />
         <Mission />
         <Project />
+        <Union />
         <Gallery />
         <Support />
         <Founder />

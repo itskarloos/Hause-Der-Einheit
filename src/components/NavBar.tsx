@@ -26,7 +26,7 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
       setIsScrolled(currentScrollPos > 50);
 
       // Update active section based on scroll position
-      const sections = ['start', 'aliyah', 'mission', 'project', 'support', 'founder', 'contact'];
+      const sections = ['start', 'aliyah', 'mission', 'project', 'union', 'support', 'founder', 'contact'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -67,6 +67,7 @@ const NavBar: React.FC<NavBarProps> = ({ isMenuOpen, setIsMenuOpen, language, se
       ]
     },
     { id: 'project', label: t('nav.project') },
+    { id: 'union', label: t('nav.union') },
     { id: 'support', label: t('nav.support') },
     { id: 'contact', label: t('nav.contact') },
     { id: 'blog', label: t('nav.blog') },
